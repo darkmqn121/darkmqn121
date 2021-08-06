@@ -12,6 +12,8 @@ reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{A3D53349-6E61-4557-8FC7-0028EDCEEBF6}\Count" /f
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{9E04CAB2-CC14-11DF-BB8C-A2F1DED72085}\Count" /f
 reg delete "HKEY_CLASSES_ROOT\riotclient" /f
+sc delete vgk
+sc delete vgc
 RMDIR /S /Q "C:\Users\%username%\AppData\Local\VALORANT"
 RMDIR /S /Q "C:\Riot Games"
 RMDIR /S /Q "C:\ProgramData\Riot Games"
